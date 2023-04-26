@@ -10,7 +10,7 @@
 Clone the Login-react 
 ### `git clone https://github.com/omidnami/react-login.git`
 
-Istall dependencies 
+Install dependencies 
 ### `npm install`
 
 In the project directory, you can run:
