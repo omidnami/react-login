@@ -1,6 +1,8 @@
 import React from "react";
-import Social from "../../social";
+import Social from "../social";
 
+const googleLogo = "/images/google-logo.png";
+const githubLogo = "/images/github-logo.png";
 const LoginInfo  = function (props) {
     
     return (
@@ -12,8 +14,12 @@ const LoginInfo  = function (props) {
                         </a>
                         <h4 className="text-white">{props.title}</h4>
                         <p>{props.text}</p>
-                        <a href='' className="btn-outline mb-2">{props.btn.title}</a>
-                        <a href='' className="btn-outline mb-2">{props.btn.title}</a>
+                        <button className="btn-outline mb-2 login_external">Google
+                        <img src={googleLogo} width="20" height="20" />
+                        </button>
+                        <button className="btn-outline mb-2 login_external">github
+                        <img src={githubLogo} width="20" height="20" />
+                        </button>
                         <span className="text-center text-white">OR</span>
                         <button className="btn-outline mb-2"
                              onClick={props.onChangeSignUp}>{props.btn.title}</button>

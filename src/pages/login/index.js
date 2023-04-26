@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import LoginForm from "../../login/form-login";
-import LoginInfo from "../../login/info-login";
-import Register from "../../login/form-register";
-import ResetPassword from "../../login/reset-password";
+import LoginForm from "../../components/form-login";
+import LoginInfo from "../../components/info-login";
+import Register from "../../components/form-register";
+import ResetPassword from "../../components/form-reset-password";
 
 function reduser(state, action){
 
@@ -39,7 +39,7 @@ const [login,setLogin] = useState(true);
             <div className="col-md-12 pad-0">
                 <div className="row login-box-12">
                  {form}
-                      <LoginInfo title={!signUp?'Fast login':'Fast register'} text="" btn={{title:signUp?'Sign in':'Sing up'}} 
+                      <LoginInfo title={!signUp?'Fast login':'Fast register'} text="" btn={{title:signUp?'Sign in':'Sign up'}} 
                        onChangeSignUp={changeSignUp} />
 
                       

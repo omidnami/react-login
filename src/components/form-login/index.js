@@ -33,16 +33,16 @@ const LoginForm = (props) => {
                     </div>
                     <div className="checkbox clearfix">
                         <div className="form-check checkbox-theme">
-                            <input 
+                            <label className="form-check-label">
+                                Remember me
+                                <input 
                                 className="form-check-input" 
                                 type="checkbox" 
                                 checked={rememberForm} 
                                 id="rememberMe"
-                            />
-                            <label className="form-check-label">
-                              
-                                Remember me
+                                />
                             </label>
+                            
                         </div>
                         <a onClick={props.onChangeResetPassword} href="#">Lost Password</a>
                     </div>

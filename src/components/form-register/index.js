@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { onRegisterClick, onSubmitRegisterForm } from "./handler"
 const RegisterForm = () => {
         const [emailForm,setEmailForm] = useState(''); 
         const [passwordForm,setPasswordForm] = useState('');
@@ -23,7 +24,7 @@ const RegisterForm = () => {
         <div className="login-inner-form">
             <div className="details">
                 <h3><span>Sign up</span>  Your Accuont</h3>
-                <form action="" method="post">
+                <form onSubmit={onSubmitRegisterForm}>
                     <div className="form-group">
                         <input type="email" name="email" className="input-text" placeholder="email"
                                 onChange={emailIputHandler} value={emailForm}
@@ -41,7 +42,7 @@ const RegisterForm = () => {
                     </div>
                    
                     <div className="form-group">
-                        <button type="submit" className="btn-md btn-theme btn-block">Sing up</button>
+                        <button onClick={onRegisterClick} type="submit" className="btn-md btn-theme btn-block">Sing up</button>
                     </div>
                 </form>
             </div>

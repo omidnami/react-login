@@ -181,6 +181,12 @@ a.logo_text span {
     border:2px solid #fff;
     transition: all ease 0.4s;
 }
+.login_external {
+    padding: 6px 0 6px 30px!important;
+}
+.login_external img{
+    margin: 0 6px 0 30px;
+}
 .login_wrapper .none-2{
     display: none;
 }

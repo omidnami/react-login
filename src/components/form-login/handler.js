@@ -1,7 +1,7 @@
 
 
     export const onLoginClick = ()=>{
-        window.location.href = '/dashboard';
+        alert('Go to dashboard')
     }
 
     export const onSubmitLoginForm = (event) =>{
